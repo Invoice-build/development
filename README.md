@@ -2,16 +2,21 @@
 Set up the development environment for the [invoice.build](https://invoice.build) app.
 
 ## Getting started
-Clone the three services that make up the app (api, web, eth-utils-api):
+1. Clone the three services that make up the app (api, web, eth-utils-api):
 ```bash
 git clone https://github.com/Invoice-build/api.git && git clone https://github.com/Invoice-build/web.git && git clone https://github.com/Invoice-build/eth-utils-api.git
 ```
 
-Copy the [docker-compose](https://github.com/Invoice-build/development/blob/main/docker-compose.yml) file from this repo and use it in the parent directory that contains all the apps cloned above:
+2. Copy the [docker-compose](https://github.com/Invoice-build/development/blob/main/docker-compose.yml) file from this repo and use it in the parent directory that contains all the apps cloned above:
 ```bash
 wget https://raw.githubusercontent.com/Invoice-build/development/main/docker-compose.yml
 ```
 Note: If you are using an M1 mac you may need to uncomment line 24 in docker-compose.yml.
+
+3. Add an INFURA_PROJECT_ID on line 50 (replacing 'xxx') in docker-compose.yml:
+```yaml
+INFURA_PROJECT_ID: xxx
+```
 
 Set up the api database and seed it with the supported tokens.
 ```bash
