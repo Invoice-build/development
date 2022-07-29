@@ -11,6 +11,7 @@ Copy the [docker-compose](https://github.com/Invoice-build/development/blob/main
 ```bash
 wget https://raw.githubusercontent.com/Invoice-build/development/main/docker-compose.yml
 ```
+Note: If you are using an M1 mac you may need to uncomment line 24 in docker-compose.yml.
 
 Set up the api database and seed it with the supported tokens.
 ```bash
