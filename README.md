@@ -7,7 +7,7 @@ Clone the three services that make up the app (api, web, eth-utils-api):
 git clone https://github.com/Invoice-build/api.git && git clone https://github.com/Invoice-build/web.git && git clone https://github.com/Invoice-build/eth-utils-api.git
 ```
 
-Copy the docker-compose file from this repo and use it in the parent directory that contains all the apps cloned above:
+Copy the [docker-compose](https://github.com/Invoice-build/development/blob/main/docker-compose.yml) file from this repo and use it in the parent directory that contains all the apps cloned above:
 ```bash
 wget https://raw.githubusercontent.com/Invoice-build/development/main/docker-compose.yml
 ```
